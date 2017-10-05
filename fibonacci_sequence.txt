@@ -1,0 +1,29 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package flashback.c;
+
+/**
+ *
+ * @author ops.mummidcmp01
+ */
+public class fibonacci_sequence {
+    public static void main(String[] args) {
+        fibonacci(10);
+    }
+
+    static void fibonacci(int v)
+{
+    int i,c=1,p=1,t;
+    System.out.print("1 1");
+for(i=1;i<=(v-2);i++)
+    {
+        t=c;
+        c=c+p;
+        System.out.print(" "+c);
+        p=t;
+    }
+}
+}
