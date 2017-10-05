@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package flashback.c;
+import javax.swing.*;
+
+/**
+ *
+ * @author ops.mummidcmp01
+ */
+public class IsPrime {
+    
+    static void display()
+    {
+        String st=JOptionPane.showInputDialog("Enter the number to be tested for prime");
+        int i=Integer.parseInt(st);
+         IsPrime(i);
+    }
+    
+    static void IsPrime(int v)
+    {
+        if(v%2==0)
+            JOptionPane.showMessageDialog(null, "The number is not Prime");
+        else
+        {
+            for (int i = 3; i < (v/2); i=i+2) {
+                if(v%i==0)
+                  JOptionPane.showMessageDialog(null, "The number is not Prime");
+                
+                
+              JOptionPane.showMessageDialog(null, "The number is Prime"); 
+              break;
+            }
+        }
+        
+    }
+    
+    
+}
